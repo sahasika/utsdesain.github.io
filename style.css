@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poly&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poly&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Poly&family=Roboto:wght@500&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    
+    scroll-behavior: smooth ;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.layar-dalam {
+    width: 1000px;
+    margin: auto;
+}
+
+.layar-penuh {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    z-index: 100;
+    color: rgb(34, 32, 32);
+    text-align: left;
+    position: fixed;
+    border-bottom: 1px solid rgb(240, 230, 230);
+    line-height: 60px;
+    width: 100%;
+    background-color: rgb(243, 240, 245);
+    
+}
+
+
+nav .logo {
+   float: left;
+   position: relative;
+   line-height: 55px;
+   text-align: center;
+   align-items: left;
+   font-size: 25px;
+
+
+}
+nav .menu {
+    float: right;
+    height: 60px;
+    max-width: 600px;
+}
+
+nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav .menu ul li {
+   list-style: none;
+   float: left;
+   line-height: 60px;
+}
+
+nav ul li a {
+    color: rgb(7, 7, 7);
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/*pengaturan header */
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.tombol-menu .garis {
+    height: 3px;
+    background-color: rgb(19, 18, 18);
+}
+
+@media screen and (max-width: 991.98px) {
+    .layar-dalam {
+        width: 90%;
+    }
+    nav .menu ul {
+        display: none;
+        margin-top: 60px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    nav .menu ul li {
+        width: 100%;
+        border-bottom: 1px solid rgb(235, 228, 228);
+        background-color: #fff;
+        line-height: 40px;
+        text-align: center;
+    }
+    nav .menu ul li a {
+        color: black;
+    }
+    .tombol-menu {
+        display: flex;
+    }
+    
+}
+
+#home {
+    display: grid;
+    grid-template-columns: 1,5fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+h1.large-title {
+    position: absolute;
+    width: 686px;
+    height: 86px;
+    left: 340px;
+    top: 212px;
+    color: white;
+
+    font-family: Poly;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 86px;
+}
+
+p.text-muted {
+    position: absolute;
+    width: 1096px;
+    height: 80px;
+    left: 135px;
+    top: 330px;
+
+    font-family: Poly;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: white;
+}
+
+button.btn-primary {
+    position: absolute;
+    width: 260px;
+    height: 62px;
+    left: 505px;
+    top: 513px;
+    position: absolute;
+    width: 260px;
+    height: 62px;
+    left: 505px;
+    top: 513px;
+
+    background: #29ABB4;
+    mix-blend-mode: normal;
+    border: 3px solid #F2F0DF;
+    font-family: Poly;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 43px;
+    color: #FCFCFC;
+
+}
+
+section {
+    padding: 50px 0px 50px 0px;
+}
+
+#activities {
+    text-align: center;
+}
+
+#activities h3 {
+    font-size: 30px;
+}
+
+section h3::after {
+    content: "";
+    border-bottom: 5px solid black;
+    width: 52px;
+    display: block;
+    margin: 20px auto;
+}
+
+section.abuabu {
+    background-color: rgb(255, 250, 250);
+}
+.tim {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+    
+}
+
+.tim h6 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tim div {
+    text-align: center;
+    width: 26%;
+}
+.tim p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 33px;
+}
+#experience h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+#experience h3::after {
+    content: "";
+    border-bottom: 5px solid black;
+    width: 52px;
+    display: block;
+    margin: 20px auto;
+}
+
+.ex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section.grey {
+    background-color: rgb(250, 250, 250);
+}
+
+.ex h6 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.ex div {
+    text-align: center;
+    width: 26%;
+}
+
+.ex p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 33px;
+}
+
+#contact {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+section.contact h3 {
+    font-size: 30px;
+}
+
+.field {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0,0,0,0);
+    background-color: rgba(230,230,230, 0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+}
+
+.field:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.field:focus {
+    background-color: #fff;
+    border: 2px solid rgba(30,85,250,0.47);
+}
+
+.area {
+    min-height: 150px;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: #14552f;
+    cursor: pointer;
+    outline: none;
+    border: rgb(11, 59, 23);
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #27ae60;
+}
